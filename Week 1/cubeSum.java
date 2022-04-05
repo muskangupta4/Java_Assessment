@@ -1,0 +1,19 @@
+import java.util.*;
+
+public class Solution {
+
+    public static int cubeSum(int[] arr) {
+        int i,sum=0;
+        for(i=0;i<arr.length;i++){
+            if (arr[i]%2==0){
+                sum=sum+(arr[i]*arr[i]*arr[i]);
+            }
+        }
+        return sum;
+    }
+
+    public static void main(String args[]) {
+        assert (cubeSum(new int[] { 1, 2, 3, 4 }) == 72);
+    }
+}
+
